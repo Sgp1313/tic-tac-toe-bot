@@ -1,7 +1,3 @@
-'''
-Main script.
-'''
-
 from time import sleep 
 import requests
 import utils
@@ -9,8 +5,8 @@ import utils
 
 def main():
 
-    name = 'Angel'
-    print('------- Starting tic-tac-toe bot -------')
+    NAME = "Angel"
+    print("------- Starting tic-tac-toe bot -------")
     sleep(1)
 
     # Register-phase begins

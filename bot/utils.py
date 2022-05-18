@@ -65,10 +65,67 @@ def read_board() -> list:
     return board
 
 
-def decide_move(board: list, player_id: str) -> [int, int]:
+def decide_move(board: list, player_id: str) -> list:
     """
     Decides next move to make.
     """
+    #Variable jugador 2
+
+    jug_2 = "X"
+
+    if player_id == "X":
+        jug_2 == "O"
+
+    #ESTRATEGIA GANADORA 😎
+
+    if board [0][0]== jug_2 and board [2][2] == "-":
+        return [2][2]
+
+    if board [0][1]== jug_2 and board [0][2] == "-":
+        return [0][2]
+
+    if board [1][0]== jug_2 and board [1][2] == "-":
+        return [1][2] 
+
+    if board [1][1]== jug_2 and board [2][0] == "-":
+        return [2][0]     
+
+    if board [0][0]== jug_2 and board [2][2] == "-":
+        return [2][2]
+
+    if board [2][2]== jug_2 and board [0][0] == "-":
+        return [0][0]
+
+    if board [2][1]== jug_2 and board [2][0] == "-":
+        return [2][0]
+
+    if board [2][0]== jug_2 and board [1][0] == "-":
+        return [1][0]
+
+    if board [2][2]== jug_2 and board [0][1] == "-":
+        return [0][1]
+
+    if board [2][1]== jug_2 and board [2][0] == "-":
+        return [2][0]
+
+    if board [1][0]== jug_2 and board [1][2] == "-":
+        return [1][2]  
+
+    if board [1][2]== jug_2 and board [1][1] == "-":
+        return [1][1]      
+
+    if board [1][1]== jug_2 and board [0][0] == "-":
+        return [0][0]
+
+    if board [1][1]== jug_2 and board [0][2] == "-":
+        return [0][2]
+
+    if board [1][2]== jug_2 and board [2][2] == "-":
+        return [2][2]
+
+    if board [1][2]== jug_2 and board [0][0] == "-":
+        return [0][0]
+
     row = randint(0, 2)
     column = randint(0, 2)
     return [row, column]

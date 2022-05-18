@@ -73,236 +73,175 @@ def decide_move(board: list, player_id: str) -> list:
 
     jug_2 = "X"
 
-    if player_id == "X":
+    if jug_2 == "X":
         jug_2 == "O"
 
     #ESTRATEGIA GANADORA 😎
+
+   #11 
+    if board [2][0] == jug_2 and board [1][1] == "-": 
+        return [1,1]
+    if board [0][0] == jug_2 and board [1][1] == "-": 
+        return [1,1]
+    if board [1][2] == jug_2 and board [1][1] == "-": 
+        return [1,1]
+    if board [0][1] == jug_2 and board [1][1] == "-": 
+        return [1,1]
+    if board [1][0] == jug_2 and board [1][1] == "-": 
+        return [1,1]
+    if board [0][2] == jug_2 and board [1][1] == "-": 
+        return [1,1]
+    if board [2][0] == jug_2 and board [1][1] == "-": 
+        return [1,1]
+    if board [2][1] == jug_2 and board [1][1] == "-": 
+        return [1,1]
+    if board [2][2] == jug_2 and board [1][1] == "-": 
+        return [1,1]
+    
 #00
-    if board [0][0]== jug_2 and board [0][1] == "-":
-        return [0][1]
-
-    if board [0][0]== jug_2 and board [0][2] == "-":
-        return [0][2]
-
-    if board [0][0]== jug_2 and board [1][0] == "-":
-        return [1][0] 
-
-    if board [0][0]== jug_2 and board [1][1] == "-":
-        return [1][1]     
-
-    if board [0][0]== jug_2 and board [1][2] == "-":
-        return [1][2]
-
-    if board [0][0]== jug_2 and board [2][0] == "-":
-        return [2][0]
-
-    if board [0][0]== jug_2 and board [2][1] == "-":
-        return [2][1]
-
-    if board [0][0]== jug_2 and board [2][2] == "-":
-        return [2][2]
-#01
-    if board [0][1]== jug_2 and board [0][0] == "-":
-        return [0][0]
-
-    if board [0][1]== jug_2 and board [0][2] == "-":
-        return [0][2]
-
-    if board [0][1]== jug_2 and board [1][0] == "-":
-        return [1][0]  
-
-    if board [0][1]== jug_2 and board [1][1] == "-":
-        return [1][1]      
-
-    if board [0][1]== jug_2 and board [1][2] == "-":
-        return [1][2]
-
-    if board [0][1]== jug_2 and board [2][0] == "-":
-        return [2][0]
-
-    if board [0][1]== jug_2 and board [2][1] == "-":
-        return [2][1]
-
-    if board [0][1]== jug_2 and board [2][2] == "-":
-        return [2][2]
-#02
-    if board [0][2]== jug_2 and board [0][0] == "-":
-        return [0][0]
-
-    if board [0][2]== jug_2 and board [0][1] == "-":
-        return [0][1]
-
-    if board [0][2]== jug_2 and board [1][0] == "-":
-        return [1][0]
-
-    if board [0][2]== jug_2 and board [1][1] == "-":
-        return [1][1]
-
-    if board [0][2]== jug_2 and board [1][2] == "-":
-        return [1][2]
-
-    if board [0][2]== jug_2 and board [2][0] == "-":
-        return [2][0]
-
-    if board [0][2]== jug_2 and board [2][1] == "-":
-        return [2][1]
-
-    if board [0][2]== jug_2 and board [2][2] == "-":
-        return [2][2]
-
-#10
-
-    if board [1][0]== jug_2 and board [0][0] == "-":
-        return [0][0]
-
-    if board [1][0]== jug_2 and board [0][1] == "-":
-        return [0][1]
-
-    if board [1][0]== jug_2 and board [0][2] == "-":
-        return [0][2]
-
-    if board [1][0]== jug_2 and board [1][1] == "-":
-        return [1][1]
-
-    if board [1][0]== jug_2 and board [1][2] == "-":
-        return [1][2]
-
-    if board [1][0]== jug_2 and board [2][0] == "-":
-        return [2][0]
-
-    if board [1][0]== jug_2 and board [2][1] == "-":
-        return [2][1]
-
-    if board [1][0]== jug_2 and board [2][2] == "-":
-        return [2][2]
-#11
-    if board [1][1]== jug_2 and board [0][0] == "-":
-        return [0][0]
-
-    if board [1][1]== jug_2 and board [0][1] == "-":
-        return [0][1]
-
-    if board [1][1]== jug_2 and board [0][2] == "-":
-        return [0][2]
-
-    if board [1][1]== jug_2 and board [1][0] == "-":
-        return [1][0]
-
-    if board [1][1]== jug_2 and board [1][2] == "-":
-        return [1][2]
-
-    if board [1][1]== jug_2 and board [2][0] == "-":
-        return [2][0]
-
-    if board [1][1]== jug_2 and board [2][1] == "-":
-        return [2][1]
-
-    if board [1][1]== jug_2 and board [2][2] == "-":
-        return [2][2]
-
-#12
-
-    if board [1][2]== jug_2 and board [0][0] == "-":
-        return [0][0]
-
-    if board [1][2]== jug_2 and board [0][1] == "-":
-        return [0][1]
-
-    if board [1][2]== jug_2 and board [0][2] == "-":
-        return [0][2]
-
-    if board [1][2]== jug_2 and board [1][0] == "-":
-        return [1][0]
-
-    if board [1][2]== jug_2 and board [1][1] == "-":
-        return [1][1]
-
-    if board [1][2]== jug_2 and board [2][0] == "-":
-        return [2][0]
-
-    if board [1][2]== jug_2 and board [2][1] == "-":
-        return [2][1]
-
-    if board [1][2]== jug_2 and board [2][2] == "-":
-        return [2][2]
+    if board [0][1] == jug_2 and board [0][0] == "-": 
+        return [0,0]
+    if board [0][2] == jug_2 and board [0][0] == "-": 
+        return [0,0]
+    if board [1][0] == jug_2 and board [0][0] == "-": 
+        return [0,0]
+    if board [1][1] == jug_2 and board [0][0] == "-": 
+        return [0,0]
+    if board [1][2] == jug_2 and board [0][0] == "-": 
+        return [0,0]
+    if board [2][0] == jug_2 and board [0][0] == "-": 
+        return [0,0]
+    if board [2][2] == jug_2 and board [0][0] == "-": 
+        return [0,0]
+    if board [2][1] == jug_2 and board [0][0] == "-": 
+        return [0,0]
+ 
+ #01
+    if board [0][0] == jug_2 and board [0][1] == "-": 
+        return [0,1]
+    if board [0][2] == jug_2 and board [0][1] == "-": 
+        return [0,1]
+    if board [1][0] == jug_2 and board [0][1] == "-": 
+        return [0,1]
+    if board [1][1] == jug_2 and board [0][1] == "-": 
+        return [0,1]
+    if board [1][2] == jug_2 and board [0][1] == "-": 
+        return [0,1]
+    if board [2][0] == jug_2 and board [0][1] == "-": 
+        return [0,1]
+    if board [2][2] == jug_2 and board [0][1] == "-": 
+        return [0,1]
+    if board [2][1] == jug_2 and board [0][1] == "-": 
+        return [0,1]
+    
+    #02
+    if board [0][0] == jug_2 and board [0][2] == "-": 
+        return [0,2]
+    if board [0][1] == jug_2 and board [0][2] == "-": 
+        return [0,2]
+    if board [1][0] == jug_2 and board [0][2] == "-": 
+        return [0,2]
+    if board [1][1] == jug_2 and board [0][2] == "-": 
+        return [0,2]
+    if board [1][2] == jug_2 and board [0][2] == "-": 
+        return [0,2]
+    if board [2][0] == jug_2 and board [0][2] == "-": 
+        return [0,2]
+    if board [2][1] == jug_2 and board [0][2] == "-": 
+        return [0,2]
+    if board [2][2] == jug_2 and board [0][2] == "-": 
+        return [0,2]
+ 
+ #10
+    if board [0][0] == jug_2 and board [1][0] == "-": 
+        return [1,0]
+    if board [0][1] == jug_2 and board [1][0] == "-": 
+        return [1,0]
+    if board [0][2] == jug_2 and board [1][0] == "-": 
+        return [1,0]
+    if board [1][1] == jug_2 and board [1][0] == "-": 
+        return [1,0]
+    if board [1][2] == jug_2 and board [1][0] == "-": 
+        return [1,0]
+    if board [2][0] == jug_2 and board [1][0] == "-": 
+        return [1,0]
+    if board [2][1] == jug_2 and board [1][0] == "-": 
+        return [1,0]
+    if board [2][2] == jug_2 and board [1][0] == "-": 
+        return [1,0]
+   
+   #12
+    if board [0][0] == jug_2 and board [1][2] == "-": 
+        return [1,2]
+    if board [0][1] == jug_2 and board [1][2] == "-": 
+        return [1,2]
+    if board [0][2] == jug_2 and board [1][2] == "-": 
+        return [1,2]
+    if board [1][0] == jug_2 and board [1][2] == "-": 
+        return [1,2]
+    if board [1][1] == jug_2 and board [1][2] == "-": 
+        return [1,2]
+    if board [2][0] == jug_2 and board [1][2] == "-": 
+        return [1,2]
+    if board [2][1] == jug_2 and board [1][2] == "-": 
+        return [1,2]
+    if board [2][2] == jug_2 and board [1][2] == "-": 
+        return [1,2]
 
 #20
-
-    if board [2][0]== jug_2 and board [0][0] == "-":
-        return [0][0]
-
-    if board [2][0]== jug_2 and board [0][1] == "-":
-        return [0][1]
-
-    if board [2][0]== jug_2 and board [0][2] == "-":
-        return [0][2]
-
-    if board [2][0]== jug_2 and board [1][0] == "-":
-        return [1][0]
-
-    if board [2][0]== jug_2 and board [1][1] == "-":
-        return [1][1]
-
-    if board [2][0]== jug_2 and board [1][2] == "-":
-        return [1][2]
-
-    if board [2][0]== jug_2 and board [2][1] == "-":
-        return [2][1]
-
-    if board [2][0]== jug_2 and board [2][2] == "-":
-        return [2][2]
-#21
-
-    if board [2][1]== jug_2 and board [0][0] == "-":
-        return [0][0]
-
-    if board [2][1]== jug_2 and board [0][1] == "-":
-        return [0][1]
-
-    if board [2][1]== jug_2 and board [0][2] == "-":
-        return [0][2]
-
-    if board [2][1]== jug_2 and board [1][0] == "-":
-        return [1][0]
-
-    if board [2][1]== jug_2 and board [1][1] == "-":
-        return [1][1]
-
-    if board [2][1]== jug_2 and board [1][2] == "-":
-        return [1][2]
-
-    if board [2][1]== jug_2 and board [2][0] == "-":
-        return [2][0]
-
-    if board [2][1]== jug_2 and board [2][2] == "-":
-        return [2][2]
+    if board [0][0] == jug_2 and board [2][0] == "-": 
+        return [2,0]
+    if board [0][1] == jug_2 and board [2][0] == "-": 
+        return [2,0]
+    if board [0][2] == jug_2 and board [2][0] == "-": 
+        return [2,0]
+    if board [1][0] == jug_2 and board [2][0] == "-": 
+        return [2,0]
+    if board [1][1] == jug_2 and board [2][0] == "-": 
+        return [2,0]
+    if board [1][2] == jug_2 and board [2][0] == "-": 
+        return [2,0]
+    if board [2][1] == jug_2 and board [2][0] == "-": 
+        return [2,0]
+    if board [2][2] == jug_2 and board [2][0] == "-": 
+        return [2,0]
+   
+   #21
+   
+    if board [0][0] == jug_2 and board [2][1] == "-": 
+        return [2,1]
+    if board [0][1] == jug_2 and board [2][1] == "-": 
+        return [2,1]
+    if board [0][2] == jug_2 and board [2][1] == "-": 
+        return [2,1]
+    if board [1][0] == jug_2 and board [2][1] == "-": 
+        return [2,1]
+    if board [1][1] == jug_2 and board [2][1] == "-": 
+        return [2,1]
+    if board [1][2] == jug_2 and board [2][1] == "-": 
+        return [2,1]
+    if board [2][0] == jug_2 and board [2][1] == "-": 
+        return [2,1]
+    if board [2][2] == jug_2 and board [2][1] == "-": 
+        return [2,1]
+    if board [0][0] == jug_2 and board [2][2] == "-": 
+        return [2,2]
 #22
-    if board [2][2]== jug_2 and board [0][0] == "-":
-        return [0][0]
 
-    if board [2][2]== jug_2 and board [0][1] == "-":
-        return [0][1]
-
-    if board [2][2]== jug_2 and board [0][2] == "-":
-        return [0][2]
-
-    if board [2][2]== jug_2 and board [1][0] == "-":
-        return [1][0]
-
-    if board [2][2]== jug_2 and board [1][1] == "-":
-        return [1][1]
-
-    if board [2][2]== jug_2 and board [1][2] == "-":
-        return [1][2]
-
-    if board [2][2]== jug_2 and board [2][0] == "-":
-        return [2][0]
-
-    if board [2][2]== jug_2 and board [2][1] == "-":
-        return [2][1]
-
-
-
+    if board [0][1] == jug_2 and board [2][2] == "-": 
+        return [2,2]
+    if board [0][2] == jug_2 and board [2][2] == "-": 
+        return [2,2]
+    if board [1][0] == jug_2 and board [2][2] == "-": 
+        return [2,2]
+    if board [1][1] == jug_2 and board [2][2] == "-": 
+        return [2,2]
+    if board [1][2] == jug_2 and board [2][2] == "-": 
+        return [2,2]
+    if board [2][0] == jug_2 and board [2][2] == "-": 
+        return [2,2]
+    if board [2][1] == jug_2 and board [2][2] == "-": 
+        return [2,2]
 
 
 

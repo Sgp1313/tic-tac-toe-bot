@@ -78,25 +78,6 @@ def decide_move(board: list, player_id: str) -> list:
 
     #ESTRATEGIA GANADORA 😎
 
-   #11 
-    if board [2][0] == jug_2 and board [1][1] == "-": 
-        return [1,1]
-    if board [0][0] == jug_2 and board [1][1] == "-": 
-        return [1,1]
-    if board [1][2] == jug_2 and board [1][1] == "-": 
-        return [1,1]
-    if board [0][1] == jug_2 and board [1][1] == "-": 
-        return [1,1]
-    if board [1][0] == jug_2 and board [1][1] == "-": 
-        return [1,1]
-    if board [0][2] == jug_2 and board [1][1] == "-": 
-        return [1,1]
-    if board [2][0] == jug_2 and board [1][1] == "-": 
-        return [1,1]
-    if board [2][1] == jug_2 and board [1][1] == "-": 
-        return [1,1]
-    if board [2][2] == jug_2 and board [1][1] == "-": 
-        return [1,1]
     
 #00
     if board [0][1] == jug_2 and board [0][0] == "-": 
@@ -170,6 +151,29 @@ def decide_move(board: list, player_id: str) -> list:
     if board [2][2] == jug_2 and board [1][0] == "-": 
         return [1,0]
    
+
+   #11 
+    if board [2][0] == jug_2 and board [1][1] == "-": 
+        return [1,1]
+    if board [0][0] == jug_2 and board [1][1] == "-": 
+        return [1,1]
+    if board [1][2] == jug_2 and board [1][1] == "-": 
+        return [1,1]
+    if board [0][1] == jug_2 and board [1][1] == "-": 
+        return [1,1]
+    if board [1][0] == jug_2 and board [1][1] == "-": 
+        return [1,1]
+    if board [0][2] == jug_2 and board [1][1] == "-": 
+        return [1,1]
+    if board [2][0] == jug_2 and board [1][1] == "-": 
+        return [1,1]
+    if board [2][1] == jug_2 and board [1][1] == "-": 
+        return [1,1]
+    if board [2][2] == jug_2 and board [1][1] == "-": 
+        return [1,1]
+
+
+
    #12
     if board [0][0] == jug_2 and board [1][2] == "-": 
         return [1,2]
@@ -242,8 +246,6 @@ def decide_move(board: list, player_id: str) -> list:
         return [2,2]
     if board [2][1] == jug_2 and board [2][2] == "-": 
         return [2,2]
-
-
 
 
 
